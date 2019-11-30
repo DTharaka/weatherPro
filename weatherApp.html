@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+               crossorigin="anonymous">
+    <link rel="stylesheet" href="weatherApp.css">
+</head>
+<body>
+    <div class="container my-3 mx-auto">
+        <h1 class="text-muted text-center my-3">WeatherPro</h1>
+        
+        <form class="change-location my-3 text-muted text-center">
+            <label for="city">Enter your location for weather information</label>
+            <input type="text" name="city" class="form-control p-4">
+        </form>
+
+        <div class="card shadow-lg rounded d-none">
+            <img src="https://via.placeholder.com/150" class="time card-img-top">
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+            <div class="details text-muted text-center text-uppercase">
+                <h5 class="my-2">City Name</h5>
+                <div class="my-2">weather condition</div>
+                <div class="display-2 my-2">
+                    <span>temp</span>
+                    <span>&#8451</span>
+                    <span>temp</span>
+                    <span>&#8457</span>
+                </div>
+                <div class="my-2">Date and Time</div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
